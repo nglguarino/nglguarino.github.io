@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Angelo Guarino</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Navbar -->
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Projects Section -->
+        <main>
+            <section id="projects">
+                <h1>Projects</h1>
+
+                <!-- Project Filters -->
+                <div class="project-filters">
+                    <input type="checkbox" id="ai" value="AI" class="project-filter">
+                    <label for="ai">AI</label>
+
+                    <input type="checkbox" id="web" value="Web" class="project-filter">
+                    <label for="web">Web</label>
+
+                    <input type="checkbox" id="design" value="Design" class="project-filter">
+                    <label for="design">Product Design</label>
+
+                    <input type="checkbox" id="writing" value="Writing" class="project-filter">
+                    <label for="writing">Writing</label>
+
+                    <input type="checkbox" id="strategy" value="Strategy" class="project-filter">
+                    <label for="strategy">Strategy Consulting</label>
+
+                    <input type="checkbox" id="finance" value="Finance" class="project-filter">
+                    <label for="finance">Finance</label>
+                </div>
+
+
+
+                <div class="project-grid">
+
+                    <div class="project-card" data-tags="Finance">
+                        <div class="video-container">
+                            <video class="hover-video" width="100%" muted autoplay loop>
+                                <source src="videos/f6.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="project-info">
+                            <h3>Computing the VaR for an equi-balanced
+                                portfolio composed by TSLA and GM assets</h3>
+                            <p>Formulas implemented through Excel VBA (2024)</p>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-tags="Finance">
+                        <div class="video-container">
+                            <video class="hover-video" width="100%" muted autoplay loop>
+                                <source src="videos/f5.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="project-info">
+                            <h3>Monte Carlo and Multiple Step Euler-scheme
+                                simulation for pricing path-dependent options</h3>
+                            <p>Formulas implemented through Excel VBA (2024)</p>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-tags="Finance">
+                        <div class="image-container">
+                            <img src="images/greeks.png" alt="Greeks of an ATM Call Option" width="100%">
+                        </div>
+                        <div class="project-info">
+                            <h3>Computing the Greeks of an ATM Call option</h3>
+                            <p>Formulas implemented through Excel VBA, and compared the Greeks obtained with Refinitiv's ones (2024)</p>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-tags="Finance">
+                        <div class="video-container">
+                            <video class="hover-video" width="100%" muted autoplay loop>
+                                <source src="videos/f3.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="project-info">
+                            <h3>Comparing Black-Scholes and Leisen-Reimer model convergence rate</h3>
+                            <p>Formulas implemented through Excel VBA (2024)</p>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-tags="Finance">
+                        <div class="video-container">
+                            <video class="hover-video" width="100%" muted autoplay loop>
+                                <source src="videos/f2.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="project-info">
+                            <h3>Computing the discount factor and the implicit dividend
+                                on GM’s call and put options</h3>
+                            <p>Box-spread strategy and put-call parity formula for European options,
+                               obtained negative implied dividend value, and proved the non-optimality of the model (2024)</p>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-tags="Finance">
+                        <div class="video-container">
+                            <video class="hover-video" width="100%" muted autoplay loop>
+                                <source src="videos/f1.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="project-info">
+                            <h3>Pricing TSLA call options through a simple binomial model</h3>
+                            <p>Built upon the historical market data,
+                                for 3-months and 6-months to maturity call options (2024)</p>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-tags="Design">
+                        <div class="video-container">
+                            <video class="hover-video" width="100%" muted autoplay loop>
+                                <source src="videos/cubbit.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="project-info">
+                            <h3>Collaborative interface for Cubbit's web app</h3>
+                            <p>Designed in Figma (2022)</p>
+                        </div>
+                    </div>
+
+                    <!-- Project 1 -->
+                    <div class="project-card" data-tags="Design">
+                        <div class="video-container">
+                            <video class="hover-video" width="100%" muted autoplay loop>
+                                <source src="videos/blink.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="project-info">
+                            <h3>Check-out integrations for Blink (YC W21)</h3>
+                            <p>Designed in Figma (2022)</p>
+                        </div>
+                    </div>
+
+                    <!-- Project 1 -->
+                    <div class="project-card" data-tags="Design">
+                        <div class="video-container">
+                            <video class="hover-video" width="100%" muted autoplay loop>
+                                <source src="videos/destock.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="project-info">
+                            <h3>Sketching DeStock's wireframe</h3>
+                            <p>First UI/UX project in Figma (2021)</p>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card" data-tags="Writing">
+                        <div class="video-container">
+                            <video class="hover-video" width="100%" muted autoplay loop>
+                                <source src="videos/sf1.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="project-info">
+                            <h3>"On venture capital and startup funding" | Starting Finance</h3>
+                            <p>Published an article on the best practices for fundraising (2021)</p>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card" data-tags="Strategy">
+                        <div class="video-container">
+                            <video class="hover-video" width="100%" muted autoplay loop>
+                                <source src="videos/hacking.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="project-info">
+                            <h3>"Hacking The City" | Tondo LAB</h3>
+                            <p>Traceable and transparent supply chain for Esselunga (2021)</p>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card" data-tags="Strategy">
+                        <div class="video-container">
+                            <video class="hover-video" width="100%" muted autoplay loop>
+                                <source src="videos/conf.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="project-info">
+                            <h3>Hackathon "Fondazione Università degli Studi di Padova" | Confcommercio</h3>
+                            <p>Developed a digital platform concept to drive the digital
+                                transformation of Italian SMEs (2020)</p>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card" data-tags="AI">
+                        <div class="video-container">
+                            <video class="hover-video" width="100%" muted autoplay loop>
+                                <source src="videos/blink.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="project-info">
+                            <h3>AI-Powered Search Tool</h3>
+                            <p>Short description of the project.</p>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card" data-tags="AI">
+                        <div class="video-container">
+                            <video class="hover-video" width="100%" muted autoplay loop>
+                                <source src="videos/blink.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="project-info">
+                            <h3>AI-Powered Search Tool</h3>
+                            <p>Short description of the project.</p>
+                        </div>
+                    </div>
+
+                    <!-- Additional Projects -->
+                    <!-- Repeat for each project as needed -->
+                </div>
+            </section>
+        </main>
+    </div>
+    <!-- Link to JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>

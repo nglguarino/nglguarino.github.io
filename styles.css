@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Reset basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define a consistent container for alignment */
+.container {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Apply font globally */
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    padding: 0 20px;
+    max-width: 950px;
+    margin: auto;
+}
+
+/* Navbar styles */
+header {
+    padding: 40px 0;
+    margin: 0;
+    text-align: left;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    justify-content: left;
+    margin: 0;
+}
+
+nav ul li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 1000;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main content */
+main {
+    padding-top: 30px;
+    padding-bottom: 80px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Link styling for minimal look */
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#home h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-left: 0;
+}
+
+#projects h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    margin-left: 0;
+}
+
+/* Project Grid Styling */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+    margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    .project-grid {
+        grid-template-columns: 1fr; /* Display 1 project per row on small screens */
+    }
+}
+
+.project-card {
+    text-align: left;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Container styling for the checkboxes */
+.project-filters {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 100px;
+}
+
+/* Label styling for a cleaner appearance */
+.project-filters label {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    color: #333;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+/* Hide the default checkbox appearance */
+.project-filters input[type="checkbox"] {
+    display: none;
+}
+
+/* Custom checkbox styling */
+.project-filters input[type="checkbox"] + label::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    border: 2px solid #888;
+    border-radius: 4px;
+    display: inline-block;
+    position: relative;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Checkbox checked state with checkmark */
+.project-filters input[type="checkbox"]:checked + label::before {
+    background-color: rgba(216, 180, 255, 0.2);
+    border-color: #6C63FF;
+}
+
+.project-filters input[type="checkbox"]:checked + label::before {
+    content: "✓"; /* Unicode checkmark */
+    font-size: 12px;
+    color: #6C63FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Optional hover effect on label */
+.project-filters label:hover::before {
+    background-color: rgba(216, 180, 255, 0.2);
+}
+
+/* Grayscale image effect with animation on hover */
+.image-container {
+    overflow: hidden; /* Ensures the zoom effect doesn't overflow the container */
+}
+
+.image-container img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    filter: grayscale(100%); /* Apply grayscale by default */
+    transition: filter 0.5s ease, transform 0.3s ease; /* Smooth transition to color and zoom */
+}
+
+/* Zoom and color effect on hover */
+.image-container:hover img {
+    filter: grayscale(0%); /* Remove grayscale on hover */
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.icon {
+    fill: #6C63FF; /* Violet color */
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.company-logo {
+    width: 16px;
+    height: 16px;
+    vertical-align: -3px; /* Or use position: relative; top: -3px; */
+    margin-right: 5px;
+}
+
+/* Grayscale video effect with animation on hover */
+.video-container {
+    overflow: hidden;
+}
+
+.video-container video {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    height: auto;
+    max-height: 100%;
+    display: block;
+    filter: grayscale(100%);
+    transition: filter 0.5s ease, transform 0.3s ease;
+}
+
+/* Zoom and color effect only on the video when hovering over .video-container */
+.video-container:hover video {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+}
+
+/* Project info styling */
+.project-info {
+    text-align: left;
+    padding: 0;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+/* Violet highlight for title on hover, with reduced opacity */
+.project-card:hover h3 {
+    background-color: rgba(216, 180, 255, 0.2);
+    color: black;
+    display: inline-block;
+    border-radius: 2px;
+    box-shadow: none;
+}
+
+.project-info h3 {
+    font-family: 'Hanken Grotesk';
+    font-size: 1.1rem;
+    font-weight: normal;
+    margin-top: 16px;
+    margin-bottom: 6px;
+    padding: 0;
+    display: inline-block;
+}
+
+.project-info p {
+    font-family: 'Nunito Sans';
+    font-size: 1rem;
+    color: #888;
+    font-style: italic;
+    margin-top: 0;
+}
